@@ -4,6 +4,8 @@
 // Gelbe LED LGELB
 // Weisse LED LWEISS
 // Temperatursensor  TMP36 
+// Versuch
+// Versuch 2
 
 #define LROT 10
 #define LGRUEN 5
