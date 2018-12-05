@@ -13,7 +13,7 @@ void drehen (double grad)
   
 }
 
-//schaut mit abstandssensoren nach gegner, wenn erkannt, dann true
+//schaut mit Abstandssensoren nach Gegner, wenn erkannt, dann true
 boolean roboterErkennen ()
 {
   
@@ -24,5 +24,16 @@ boolean aufLinie ()
 {
   
 }
+
+//wenn true nach rechts ausweichen, wenn false nach links
+void ausweichen (boolean rechtsLinks)
+{
   
+}
+
+//
+//void  ()
+//{
+  
+//}
 
