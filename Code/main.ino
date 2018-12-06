@@ -2,7 +2,7 @@
 //geschwindigkeit: wie schnell der Roboter fahren soll, bei 0 maximale gschw.
 //strecke: wie weit der Roboter fahren soll, bei 0 bleibt am fleck
 //grad: wie stark sich der Roboter drehen soll, bei 0 Geradeaus
-void fahen (double geschwindigkeit, double stecke, double grad)
+void fahren (double geschwindigkeit, double stecke, double grad)
 {
   
 }
@@ -36,4 +36,14 @@ void ausweichen (boolean rechtsLinks)
 //{
   
 //}
+
+void setup ()
+{
+  
+}
+
+void loop ()
+{
+
+}
 
