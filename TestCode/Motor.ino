@@ -1,10 +1,9 @@
-
 int MotorPin1 = 5;
 int MotorPin2 = 6;
 int MotorPin3 = 9;
 int MotorPin4 = 10;
-int MotorR =200;
-int MotorL=200;
+int MotorR =180;
+int MotorL=180;
 String Nummer;
 void setup() {
   
@@ -16,8 +15,13 @@ void setup() {
 }
 
 void loop() {
-  //Rechter Motor
-  if(MotorR>0){
+
+}
+void Fahren(int Geschwindigkeit,int Richtung){
+MotorR=Geschwindigkeit*;
+MotorL=Geschwindigkeit;
+    //Linker Motor
+if(MotorR>0){
     analogWrite(MotorPin2,0);
     analogWrite(MotorPin1,MotorR);
     }
@@ -41,5 +45,6 @@ void loop() {
   if(MotorL==0){
     analogWrite(MotorPin3,0);
     analogWrite(MotorPin4,0);
-    }
+    }  
 }
+
