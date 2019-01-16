@@ -1,5 +1,4 @@
 int LSensor[4] = {3, 4, 5, 6};
-int LSensor_Stat[4];
 
 boolean Linie(int Sensor) //Funktion zum Auslesen der Sensoren, In die Klammern muss der Sensor der ausglesen werden soll (0-3)
 {
