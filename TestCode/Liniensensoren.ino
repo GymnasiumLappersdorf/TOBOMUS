@@ -23,38 +23,5 @@ void loop() {
   Linie(2);
   Linie(3);
   Serial.println("");
-  /*
-    if (digitalRead(LSensor[0]) == 0)
-    {
-      Serial.print("1");
-
-    } else {
-      Serial.print("0");
-
-    }
-    if (digitalRead(LSensor[1]) == 0)
-    {
-      Serial.print("1");
-
-    } else {
-      Serial.print("0");
-
-    }
-    if (digitalRead(LSensor[2]) == 0)
-    {
-      Serial.print("1");
-
-    } else {
-      Serial.print("0");
-
-    }
-    if (digitalRead(LSensor[3]) == 0)
-    {
-      Serial.println("1");
-
-    } else {
-      Serial.println("0");
-
-    }
-  */
+  
 }
