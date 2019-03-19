@@ -1,12 +1,12 @@
-int MotorPin1 = 9;
-int MotorPin2 = 10;
-int MotorPin3 = 5;
-int MotorPin4 = 6;
+int MotorPin1 = 5;
+int MotorPin2 = 6;
+int MotorPin3 = 9;
+int MotorPin4 = 10;
 int MotorR = 180;
 int MotorL = 180;
 String Nummer;
 
-int color = 0; //Die standart farbe für das blatt
+int color = 1; //Die standart farbe für das blatt
 
 //Sensor 1 => 13 Pin    hinten links
 //Sensor 2 => 12 Pin    hinten rechts   
@@ -31,7 +31,10 @@ void setup() {
   pinMode(LSensor[2], INPUT);
   pinMode(LSensor[3], INPUT);
   
-  
+  pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
+  pinMode(echoPin, INPUT); // Sets the echoPin as an Input
+  Serial.begin(9600);
+  myServo.attach(12); // Defines on which pin is the servo motor attached
 }
 
 void loop() {
@@ -41,7 +44,7 @@ Linie(3);
 Linie(4);
   switch (driveMode) {
     case -1:
-      Fahren(-150, -0.5);
+      Fahren(-255, -0.2);
       delay(1);
       del-=1;
       if (Linie(3) == color) {
@@ -55,22 +58,22 @@ Linie(4);
       break;
     case 0:
       if (Linie(1) == color) {
-        del = 4000;
+        del = 1000;
         driveMode=-1;
       }
       else if (Linie(2) == color) {
-        del = 4000;
+        del = 1000;
         driveMode=1;
       }
       else {
-      Fahren(255, 1);  
+      Fahren(150, 0);  
         
       }
 
 
       break;
     case 1:
-      Fahren(-150, 0.5);
+      Fahren(-255, 0.2);
       delay(1);
       del-=1;
       if (Linie(4) == color) {
